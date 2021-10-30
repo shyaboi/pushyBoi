@@ -1,29 +1,7 @@
-// for prod
-// var urlsToCache = [
-// 	'/',
-// 	'/contact-directions/',
-// 	'/staff-directory/',
-// 	'/about-the-app/',
-// 	'/layout/css/_design.php',
-// 	'/layout/css/bootstrap.min.css',
-// 	'/layout/css/fonts/font-awesome.min.css',
-// 	'/jscripts/jquery/jquery-1.9.1.js',
-// 	'/jscripts/misc/bootstrap.min.js',
-// 	'/layout/images/logo.png'
-// ];
 
-//for testing
 var urlsToCache = [
   "/",
-  "test/contact-directions/",
-  "/test/staff-directory/",
-  "/test/about-the-app/",
-  "/test/layout/css/_design.php",
-  "/test/layout/css/bootstrap.min.css",
-  "/test/layout/css/fonts/font-awesome.min.css",
-  "/test/jscripts/jquery/jquery-1.9.1.js",
-  "/test/jscripts/misc/bootstrap.min.js",
-  "/test/layout/images/logo.png",
+  "/other_dirs"
 ];
 
 const cacheName = "v0.0.1";
@@ -73,7 +51,7 @@ function urlBase64ToUint8Array(base64String) {
 }
 
 let regied = 0
-const keyz = "BPE9zLVlRtVvtlwe4yNN80XvMFwnx3R7eI7kYXwtsQF1ceKJIqoCeZ1Cf67Y0yV5YKrHecGrnTo9w82Q9fnSAGg"
+const keyz = "ASDFGDfdjhdfgjfgVvtlwe4yNN80XvMFwnx3R7eI7kYDEGFgsHHfdjh54jgfjgfCf67Y0yV5YKrHecGrnTo9w82Q9fnSAGg"
 
 
 
@@ -99,7 +77,7 @@ self.addEventListener('notificationclick', event => {
     // clients.openWindow(event.notification.data.url); //which we got from above
     // break;
     // case 'any_other_action':
-    // clients.openWindow("https://www.foodallergyawareness.org");
+    // clients.openWindow("https://example.com");
     // break;
    // }
    if(event.notification.data){
